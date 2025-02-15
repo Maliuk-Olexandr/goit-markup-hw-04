@@ -1,0 +1,256 @@
+/* основні параметри */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+/* хедер меню */
+.header-menu {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.logo {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  padding: 24px 0;
+  margin-right: 76px;
+}
+.logo-text {
+  color: #2e2f42;
+}
+.link-header {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+}
+
+.address-header {
+  font-style: normal;
+}
+.link-address {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  padding: 24px 0;
+}
+.link-header:hover,
+.link-header:focus,
+.link-address:hover,
+.link-address:focus {
+  color: #404bbf;
+}
+
+/* блок перший - замовлення */
+
+.business {
+  background-color: #2e2f42;
+}
+.business-h-one {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.order-button {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 169px;
+  border-radius: 4px;
+  border: 0;
+  padding: 16px 32px;
+  overflow: hidden;
+}
+.order-button:hover,
+.order-button:focus {
+  background-color: #404bbf;
+}
+
+/* блок другий - переваги */
+
+.advantages-h-three {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.base-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.team-card p {
+  text-align: center;
+}
+
+/* блок третій - наша команда */
+.team {
+  background-color: #f4f4fd;
+}
+.base-h-two {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.base-h-three {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.team-card {
+  background-color: #fff;
+}
+
+/* блок footer */
+.footer {
+  background-color: #2e2f42;
+}
+.logo-text-footer {
+  color: #f4f4fd;
+}
+.footer-text {
+  color: #f4f4fd;
+  width: 264px;
+}
+/* -----------align---------------- */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.address-header ul,
+.header-nav-links,
+.header-nav-links ul,
+.header-menu .container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.business.section {
+  padding: 188px 0;
+}
+.team-list,
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.team-card,
+.advantages-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.team-card {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  overflow: hidden;
+}
+.team-card-desc .base-h-three {
+  text-align: center;
+}
+.team-card-desc {
+  padding: 32px 0;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-list-desc {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.portfolio-list-desc .base-h-three {
+  margin-bottom: 8px;
+}
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+footer .logo {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
