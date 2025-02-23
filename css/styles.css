@@ -3,7 +3,7 @@
 body {
   background-color: #fff;
   color: #434455;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
@@ -33,12 +33,14 @@ img {
 /* хедер меню */
 .header-menu {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .logo {
   color: #4d5ae5;
   display: block;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -62,16 +64,15 @@ img {
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-menu-item {
+.active {
   position: relative;
+  color: #404bbf;
 }
-.link-header.activ {
-  color: #4d5ae5;
-}
-.activ::after {
-  background-color: #4d5ae5;
-  bottom: 0;
-  content: "";
+.active::after {
+  border-radius: 2px;
+  background-color: #404bbf;
+  bottom: -1px;
+  content: '';
   display: block;
   height: 4px;
   position: absolute;
@@ -112,7 +113,7 @@ img {
     url(../images/people-office.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1440px;
+  background-size: cover;
 }
 .business-h-one {
   color: #fff;
@@ -150,11 +151,14 @@ img {
   background-color: #404bbf;
 }
 .advantages-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   background: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
-  padding: 24px 100px;
 }
 /* блок другий - переваги */
 
@@ -205,30 +209,34 @@ img {
 }
 .team-social-list {
   display: flex;
-  fill: #f4f4fd;
   gap: 24px;
 }
 .team .team-social-list {
   justify-content: center;
 }
 .team-social-item {
-  align-items: center;
+  height: 40px;
+  width: 40px;
+}
+.team-social {
+  fill: #f4f4fd;
+}
+.team-social-link {
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
-  height: 40px;
+  align-items: center;
   justify-content: center;
-  transition-duration: 250ms;
-  transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-social-item:hover,
-.team-social-item:focus {
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: #404bbf;
 }
-.footer .team-social-item:hover,
-.footer .team-social-item:focus {
+.footer .team-social-link:hover,
+.footer .team-social-link:focus {
   background-color: #31d0aa;
 }
 .portfolio-list-img {
@@ -262,16 +270,17 @@ img {
 }
 .overlay {
   background-color: #4d5ae5;
-  color: #f4f4fd;
-  left: 0;
-  letter-spacing: 0.02em;
   min-height: 100%;
   min-width: 100%;
-  padding: 40px 32px;
   position: absolute;
   top: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #f4f4fd;
+  font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+  padding: 40px 32px;
 }
 /* блок footer */
 .footer {
@@ -284,7 +293,7 @@ img {
   color: #f4f4fd;
   width: 264px;
 }
-.footer-social p {
+.footer-social p{
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -294,8 +303,9 @@ img {
 }
 /* -----------align---------------- */
 .section {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .container {
   margin: 0 auto;
@@ -339,8 +349,9 @@ img {
 }
 
 .footer {
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 footer .logo {
   display: inline-block;
@@ -362,4 +373,8 @@ footer .logo {
 .footer .container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
+}
+.footer .team-social-list{
+  gap: 16px;
 }
