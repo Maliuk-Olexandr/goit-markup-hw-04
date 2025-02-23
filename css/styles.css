@@ -293,7 +293,7 @@ letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
 }
-.footer-social p{
+.footer-social{
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -372,9 +372,11 @@ footer .logo {
 }
 .footer .container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 .footer .team-social-list{
   gap: 16px;
+}
+.footer-info{
+  margin-right: 120px;
 }
